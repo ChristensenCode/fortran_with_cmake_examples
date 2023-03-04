@@ -1,0 +1,6 @@
+SET(LIBRARY_SRC 
+    ${SRC_LIB}/area.F90
+    ${SRC_LIB}/geometry.F90
+)
+
+ADD_LIBRARY(${LIBRARY_NAME} STATIC ${LIBRARY_SRC})

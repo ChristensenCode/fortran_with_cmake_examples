@@ -1,0 +1,4 @@
+{
+    "fortran.fortls.path": "/home/$USER/anaconda3/envs/py38/bin/fortls",
+    "fortran.linter.modOutput": "${workspaceFolder}/.vscode_mods",
+}
