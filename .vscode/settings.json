@@ -1,0 +1,4 @@
+{
+    "fortran.linter.modOutput": "${workspaceFolder}/.vscode_mods",
+    "fortran.fortls.path": "fortls"
+}
