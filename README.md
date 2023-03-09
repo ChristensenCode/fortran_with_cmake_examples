@@ -28,10 +28,18 @@ and creates a build directory.
 I included some `vscode` specific stuff because I find working with Fortran
 to be really nice using the tool and figured others might benefit as well.
 
+## VS Code Extension
+|Extension Name  |Developer Name                    |
+|----------------|----------------------------------|
+| C/C++          | Microsoft                        |
+| CMake          | twxs                             |
+| CMake Tools    | Microsoft                        |
+| Modern Fortran | The Fortran Programming Language |
+
 ## Resources
 https://fortran-lang.org/en/
 
-* Great website for everything do about Fortran
+* Great website for everything to do with Fortran
 
 https://github.com/SethMMorton/cmake_fortran_template
 
