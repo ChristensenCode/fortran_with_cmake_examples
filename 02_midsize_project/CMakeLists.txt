@@ -5,6 +5,9 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.16.3)
 # The top level CMAKE file requires the project to be defined.
 PROJECT(sample_project Fortran)
 
+# Arguments for CMake
+option(DEBUG false)
+
 # Define fortran compiler
 SET(CMAKE_FC_COMPILER gfortran)
 
@@ -33,6 +36,15 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/run)
 
 # Have the .mod files placed in the bin folder
 SET(CMAKE_Fortran_MODULE_DIRECTORY ${CMAKE_MODULE_PATH})
+
+if (DEBUG)
+    message(VERBOSE "Compiling for development...")    
+    set(CMAKE_Fortran_FLAGS "-g -Wall -Wextra -fbacktrace -fbounds-check -ffpe-trap=zero,overflow,underflow")
+else()
+    message(VERBOSE "Compiling for release...")
+    set(CMAKE_Fortran_FLAGS "-O3")
+endif()
+
 
 # Add subdirectories for the build process to look in
 ADD_SUBDIRECTORY(${SRC_LIB})
