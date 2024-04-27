@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Mode",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/02_midsize_project/build/run/main_program",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "miDebuggerPath": "gdb",
+            "preLaunchTask": "compile release",
+        },
+        {
+            "name": "Debug Mode",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/02_midsize_project/build/run/main_program",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "miDebuggerPath": "gdb",
+            "preLaunchTask": "compile debug",
+        }
+    ]
+}

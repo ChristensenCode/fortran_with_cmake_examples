@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compile release",
+            "type": "shell",
+            "command": "cd 02_midsize_project; ./build.sh",
+        },
+        {
+            "label": "compile debug",
+            "type": "shell",
+            "command": "cd 02_midsize_project; ./debug_build.sh",
+        }
+    ]
+}
