@@ -1,4 +1,5 @@
 {
-    "fortran.linter.modOutput": "${workspaceFolder}/.vscode_mods",
-    "fortran.fortls.path": "fortls"
+    "fortran.fortls.path": "fortls",
+    "cmake.sourceDirectory": "${workspaceFolder}/02_midsize_project",
+    "fortran.formatting.formatter": "fprettify",
 }
