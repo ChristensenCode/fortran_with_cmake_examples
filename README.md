@@ -4,7 +4,7 @@
 After working with Fortran for a little bit, I found the best tool 
 for automating the build process for Fortran is `CMake`.
 `CMake` has a number of rich high-level features
-that make build Fortran codes easier and more consistent.
+that make building Fortran codes easier and more consistent.
 I've seen builds that use pure `Make`, which works well for
 smaller projects, but quickly become confusing as the project grows.
 
